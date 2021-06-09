@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import languages from '../data/languages.json';
 
 import { Stack } from '@chakra-ui/layout';
@@ -9,6 +9,9 @@ import { FaList, FaTable } from 'react-icons/fa';
 
 
 export function Filters() {
+
+    const [viewType, setViewType] = useState('list');
+
     return(
         <Stack isInline spacing="10px">
             
@@ -31,8 +34,8 @@ export function Filters() {
             </Menu>    
 
             <Stack isInline spacing={0} borderWidth={1} bg="white" rounded='5px' alignItems="center" ml='10px'>
-                <Button leftIcon={<FaTable/>} bg="transparent" fontWeight={400}>Grid</Button>
-                <Button leftIcon={<FaList/>} bg="transparent" fontWeight={400}>List</Button>
+                <Button onClick={() => {setViewType('grid')}} leftIcon={<FaTable/>} bg="transparent" fontWeight={400} bg={ viewType === 'grid' ? 'gray.200' : 'white'} >Grid</Button>
+                <Button onClick={() => {setViewType('list')}} leftIcon={<FaList/>} bg="transparent" fontWeight={400} bg={ viewType === 'list' ? 'gray.200' : 'white'} >List</Button>
             </Stack>            
             
         </Stack>

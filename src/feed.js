@@ -25,7 +25,7 @@ export function Feed() {
 
             </Flex>
 
-            <SimpleGrid columns={3} spacing='15px'>
+            <SimpleGrid columns={1} spacing='15px'>
                 <Repo/>
                 <Repo/>
                 <Repo/>
