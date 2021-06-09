@@ -1,4 +1,4 @@
-import { Box, Text } from '@chakra-ui/layout';
+import { Text } from '@chakra-ui/layout';
 import React from 'react';
 
 export function GroupTitle() {

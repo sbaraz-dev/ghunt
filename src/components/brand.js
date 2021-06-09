@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Flex, Heading, Stack, Text } from "@chakra-ui/layout";
+import { Box, Flex, Heading, Text } from "@chakra-ui/layout";
 import { Image } from "@chakra-ui/image";
 
 export function Brand() {
