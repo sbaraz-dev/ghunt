@@ -2,17 +2,21 @@ import React from 'react';
 import { Header } from './components/page-header';
 import { GroupTitle } from './components/group-title';
 import { Filters } from './components/filters';
+import { Brand } from './components/brand';
 
-import { Box, Flex, SimpleGrid} from "@chakra-ui/layout";
+
+import { Box, Flex, Heading, SimpleGrid, Stack, Text } from "@chakra-ui/layout";
 import { Button } from "@chakra-ui/button";
+import { Image } from "@chakra-ui/image";
 
+import { FaGithub, FaChrome, FaTwitter } from 'react-icons/fa';
 import { Repo } from './components/repo';
 
 
 
 export function Feed() {
     return(
-        <Box maxWidth='1200px' mx='auto' padding="25px">
+        <Box maxWidth='1200px' mx='auto' padding="10px">
             <Header/>
 
             <Flex alignItems="center" justifyContent="space-between" py="20px">
