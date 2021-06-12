@@ -98,7 +98,7 @@ export function Feed() {
                 )
 
                 return (
-                    <Box py="20px">
+                    <Box mt="25px">
                         { groupTitle }
                         <SimpleGrid columns={viewType === 'grid' ? 3 : 1} spacing='15px'>
                             { repoGroup.items.map( repo => <Repo viewType={viewType} repo={repo} /> ) }
