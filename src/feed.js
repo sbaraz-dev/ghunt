@@ -76,7 +76,7 @@ export function Feed() {
             <Header/>
             { repositories.length === 0 && loading && <PageLoader/> }   
 
-            <Flex alignItems="center" justifyContent="space-between" py="20px">
+            <Flex alignItems="center" justifyContent="space-between" py="20px" >
                 <GroupTitle startDate={repositories?.[0]?.startDate} endDate={repositories?.[0]?.endDate} />
                 <Filters
                     viewType={viewType}
@@ -98,7 +98,7 @@ export function Feed() {
                 )
 
                 return (
-                    <Box>
+                    <Box py="20px">
                         { groupTitle }
                         <SimpleGrid columns={viewType === 'grid' ? 3 : 1} spacing='15px'>
                             { repoGroup.items.map( repo => <Repo viewType={viewType} repo={repo} /> ) }
